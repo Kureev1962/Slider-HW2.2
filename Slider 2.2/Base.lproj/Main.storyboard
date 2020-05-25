@@ -33,10 +33,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="QDz-an-gSp">
-                                        <rect key="frame" x="130" y="0.0" width="254" height="31"/>
+                                        <rect key="frame" x="150" y="0.0" width="234" height="31"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="naU-In-8el"/>
+                                            <constraint firstAttribute="width" constant="230" id="naU-In-8el"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="onRedSliderChange" destination="BYZ-38-t0r" eventType="valueChanged" id="7oF-NG-fex"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -50,10 +53,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qst-9o-IYI">
-                                        <rect key="frame" x="130" y="0.0" width="254" height="31"/>
+                                        <rect key="frame" x="150" y="0.0" width="234" height="31"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="26k-qJ-5Am"/>
+                                            <constraint firstAttribute="width" constant="230" id="26k-qJ-5Am"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="onGreenSliderChange" destination="BYZ-38-t0r" eventType="valueChanged" id="Lez-Fb-kS4"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -67,10 +73,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rf8-7l-nEC">
-                                        <rect key="frame" x="130" y="0.0" width="254" height="31"/>
+                                        <rect key="frame" x="150" y="0.0" width="234" height="31"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="NRX-Ic-N85"/>
+                                            <constraint firstAttribute="width" constant="230" id="NRX-Ic-N85"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="onBlueSliderChange" destination="BYZ-38-t0r" eventType="valueChanged" id="hGi-vD-iob"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -93,10 +102,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="BZw-ad-ps8" id="bQl-uf-T3b"/>
+                        <outlet property="blueSlider" destination="rf8-7l-nEC" id="juH-oi-0sv"/>
+                        <outlet property="greenLabel" destination="Ugx-xo-k3h" id="sSp-6G-UIb"/>
+                        <outlet property="greenSlider" destination="qst-9o-IYI" id="K3Q-N1-7sc"/>
+                        <outlet property="preview" destination="Mt7-2Y-cXA" id="fbE-k3-Tzk"/>
+                        <outlet property="redLabel" destination="Wzk-H7-dYW" id="82K-c5-pkm"/>
+                        <outlet property="redSlider" destination="QDz-an-gSp" id="Bme-cx-0Hu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-65.217391304347828" y="119.86607142857142"/>
+            <point key="canvasLocation" x="-103" y="25"/>
         </scene>
     </scenes>
 </document>
